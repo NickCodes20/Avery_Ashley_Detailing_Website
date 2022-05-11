@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('img/B&W Mercedes.jpg');
+  background-size: cover;
+  background-position-y: 30%;
+  background-color: rgba(41, 7, 13, 85%); /* Tint color */
+  background-blend-mode: multiply;
+  height: 100vh;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* to do
+pad the content appropriately,
+fix footer to stick to very bottom of page */
+
+.nav-bar {
+  background-image: linear-gradient(black, rgba(0, 0, 0, 0%));
+}
+
+.nav-items {
+  color: rgb(195, 195, 195);
+  font-size: 1.125rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+}
+
+.nav-items li {
+  padding: 0.5em 3em;
+  padding-top: 1em;
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: rgb(195, 195, 195);
+}
+
+.nav-items li:hover,
+.nav-items li:focus {
+  border-bottom: 3px solid white;
+  /* text-shadow: -5px 5px 20px hsl(43, 100%, 44%); */
+}
+
+/* .flex-container {
+    display: flex;
+    justify-content: center;
+} */
+
+.body-container {
+  color: rgb(195, 195, 195);
+}
+
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.container p,
+.container figure {
+  font-size: 1.125rem;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+.main-header {
+  color: hsl(43, 100%, 44%);
+  font-size: 3rem;
+  line-height: 1em;
+  text-align: center;
+}
+
+.section-header {
+  color: hsl(43, 100%, 44%);
+  font-size: 2.5rem;
+  line-height: 1em;
+  text-align: center;
+  margin: 0;
+}
+
+.sub-header {
+  color: hsl(43, 100%, 44%);
+  font-size: 1.625rem;
+  padding-top: 1.5em;
+}
+
+.img-flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  overflow-x: hidden;
+}
+
+.img-fig {
+  font-size: 1.625rem;
+  text-align: center;
+}
+
+.img-fig a {
+  text-decoration: none;
+  color: rgb(195, 195, 195);
+}
+
+.img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 1.5em 0;
+  height: 20vw;
+  object-fit: cover;
+  /* add gap in images */
+  /* label images underneath the pictures */
+  /* try flex shrink 0 to keep images from shrinking when page does */
+}
+
+.info-background {
+  background-color: rgba(0, 0, 0, 70%);
+  padding: 2.5em 1em;
+}
+
+.info-flex {
+  display: flex;
+  justify-content: center;
+  flex: 1 1 100%;
+}
+/* create media query for mobile making flex direction column */
+
+.service-info {
+  text-align: center;
+  padding: 0 1em;
+}
+
+.btn-flex {
+  text-align: center;
+}
+
+.btn {
+  font-size: 1.25rem;
+  background-color: hsl(43, 100%, 44%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 1.2em;
+  margin: 3em 0;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: hsl(43, 100%, 54%);
+  cursor: pointer;
+}
+
+.footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0%), black);
+  color: white;
+  margin-top: 4.6em;
+  padding-bottom: 2em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Gallery Stylesheet Below */
+/* test */
