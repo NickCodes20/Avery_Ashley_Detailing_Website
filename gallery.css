@@ -245,9 +245,6 @@ a img {
   /* label images underneath the pictures */
   /* try flex shrink 0 to keep images from shrinking when page does */
 }
-
-.img-link {
-}
 /* find out how to fit anchor tag to image size */
 
 .info-background {
@@ -336,6 +333,12 @@ a img {
   }
   #toggle:checked + .nav-items {
     display: block;
+  }
+}
+
+@media (max-width: 950px) {
+  .container {
+    grid: auto/auto auto;
   }
 }
 
