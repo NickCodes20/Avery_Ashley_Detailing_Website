@@ -5,36 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallery</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/gallery.css" />
+    <!-- <script defer src="/script.js" type="module"></script> -->
   </head>
   <body>
     <div class="background">
       <nav class="nav-bar">
+        <label for="toggle" class="hamburger">&#9776;</label>
+        <input type="checkbox" id="toggle" />
         <ul class="nav-items">
-          <li><a href="pages/index.html">Home</a></li>
-          <li><a href="pages/gallery.html">Gallery</a></li>
-          <li><a href="pages/contact.html">Contact</a></li>
+          <li><a href="/pages/index.html">Home</a></li>
+          <li><a href="/pages/gallery.html">Gallery</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
         </ul>
       </nav>
-      <div class="flex-container">
-        <div class="container">
-          <h1 class="main-header">Gallery</h1>
-          <span class="img-flex">
-            <figure class="img-fig">
-              <img class="img" src="img/Boat View.jpg" alt="Boat at sea" />
-              <figcaption class="img-fig">Boats</figcaption>
-            </figure>
-            <figure class="img-fig">
-              <img class="img" src="img/White BMW.jpg" alt="White BMW" />
-              <figcaption class="img-fig">Cars</figcaption>
-            </figure>
-          </span>
-          <div>
-            <a href="https://booksy.com/en-us/" target="_blank"
-              ><button class="btn">Book Me</button></a
-            >
-          </div>
-        </div>
+      <h1 class="main-header">Gallery</h1>
+      <div class="container">
+        <!-- <div class="gallery-grid"> -->
+
+        <a class="img-link" href="Sea Ray BnA.html"
+          ><img class="img-item" src="/img/Boats After//Sea Ray/9.jpg"
+        /></a>
+        <a href="Sea Ray BnA.html"
+          ><img class="img-item" src="/img/Boats After//Sea Ray/9.jpg"
+        /></a>
+        <a href="Sea Ray BnA.html"
+          ><img class="img-item" src="/img/Boats After//Sea Ray/9.jpg"
+        /></a>
+        <a href="Sea Ray BnA.html"
+          ><img class="img-item" src="/img/Boats After//Sea Ray/9.jpg"
+        /></a>
+        <a href="Sea Ray BnA.html"
+          ><img class="img-item" src="/img/Boats After//Sea Ray/9.jpg"
+        /></a>
+        <a href="Sea Ray BnA.html"
+          ><img class="img-item" src="/img/Boats After//Sea Ray/9.jpg"
+        /></a>
+        <a href="Sea Ray BnA.html"
+          ><img class="img-item" src="/img/Boats After//Sea Ray/9.jpg"
+        /></a>
+        <!-- <button class="open-modal" data-modal="true" data-gallery="Boat"> -->
+        <!-- </button> -->
+        <!-- commented buttons are for img activation with js -->
+
+        <!-- <img class="img-item" src="/img/Boats Before/Sea Ray/1.jpg" />
+              <img class="img-item" src="/img/Boats Before/Sea Ray/2.jpg" />
+              <img class="img-item" src="/img/Boats Before/Sea Ray/3.jpg" />
+              <img class="img-item" src="/img/Boats Before/Sea Ray/4.jpg" />
+              <img class="img-item" src="/img/Boats Before/Sea Ray/5.jpg" /> -->
+        <!-- <button class="close-modal btn">Close</button> -->
+
+        <!-- </div> -->
+      </div>
+      <div class="btn-container">
+        <a href="https://booksy.com/en-us/" target="_blank"
+          ><button class="btn">Book Now</button></a
+        >
       </div>
       <footer class="footer">
         <p>Email: bayboatsandcarsdetailing@gmail.com</p>

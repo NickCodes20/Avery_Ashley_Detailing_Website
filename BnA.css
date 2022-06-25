@@ -27,8 +27,8 @@ body {
 }
 
 /* to do
-pad the content appropriately,
-fix footer to stick to very bottom of page */
+    pad the content appropriately,
+    fix footer to stick to very bottom of page */
 
 .nav-bar {
   background-image: linear-gradient(black, rgba(0, 0, 0, 0%));
@@ -63,16 +63,16 @@ fix footer to stick to very bottom of page */
 }
 
 /* .flex-container {
-    display: flex;
-    justify-content: center;
-} */
+        display: flex;
+        justify-content: center;
+    } */
 
 .body-container {
-  color: var(--clr-main);
+  color: hsl(0, 0%, 76%);
 }
 
 .container {
-  max-width: 80%;
+  max-width: 70%;
   margin: 0 auto;
 }
 
@@ -105,31 +105,22 @@ fix footer to stick to very bottom of page */
   padding-top: 1.5em;
 }
 
-.img-flex {
-  /* width: 100%; */
-  /* display: flex;
-  justify-content: space-evenly; */
-  display: grid;
-  grid: auto/ auto auto;
-  overflow-x: hidden;
+a img {
+  cursor: pointer;
 }
 
-.img-fig {
-  font-size: var(--fs-200);
-  text-align: center;
+.img-container {
+  /* width: 80vw; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
-.img-fig a {
-  text-decoration: none;
-  color: var(--clr-main);
-}
-
-.img {
+.BnA-img {
   max-width: 100%;
-  height: 60%;
   border-radius: 10px;
-  margin: 1.5em 0;
-  object-fit: cover;
+  margin: 0;
   /* add gap in images */
   /* label images underneath the pictures */
   /* try flex shrink 0 to keep images from shrinking when page does */
@@ -156,6 +147,10 @@ fix footer to stick to very bottom of page */
   text-align: center;
 }
 
+.btn-container {
+  text-align: center;
+}
+
 .btn {
   font-size: calc(var(--fs-200) + 0.125rem);
   background-color: var(--clr-accent);
@@ -164,6 +159,7 @@ fix footer to stick to very bottom of page */
   border-radius: 5px;
   padding: 0.5em 1.2em;
   margin: 3em 0;
+  text-align: center;
 }
 
 .btn:hover,
@@ -174,7 +170,7 @@ fix footer to stick to very bottom of page */
 
 .footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0%), black);
-  color: var(--clr-main);
+  color: white;
   margin-top: 4.6em;
   padding-bottom: 2em;
 

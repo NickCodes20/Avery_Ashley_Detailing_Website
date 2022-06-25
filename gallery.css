@@ -27,8 +27,8 @@ body {
 }
 
 /* to do
-pad the content appropriately,
-fix footer to stick to very bottom of page */
+  pad the content appropriately,
+  fix footer to stick to very bottom of page */
 
 .nav-bar {
   background-image: linear-gradient(black, rgba(0, 0, 0, 0%));
@@ -62,26 +62,24 @@ fix footer to stick to very bottom of page */
   /* text-shadow: -5px 5px 20px hsl(43, 100%, 44%); */
 }
 
-/* .flex-container {
-    display: flex;
-    justify-content: center;
-} */
-
 .body-container {
-  color: var(--clr-main);
+  color: hsl(0, 0%, 76%);
 }
 
 .container {
   max-width: 80%;
   margin: 0 auto;
+  gap: 2rem;
+  display: grid;
+  grid: auto/ auto auto auto;
 }
 
-.container p,
+/* .container p,
 .container figure {
-  font-size: var(--fs-200);
+  font-size: 1.125rem;
   line-height: 1.5em;
   margin: 0;
-}
+} */
 
 .main-header {
   color: var(--clr-accent);
@@ -105,35 +103,152 @@ fix footer to stick to very bottom of page */
   padding-top: 1.5em;
 }
 
-.img-flex {
-  /* width: 100%; */
-  /* display: flex;
-  justify-content: space-evenly; */
-  display: grid;
-  grid: auto/ auto auto;
-  overflow-x: hidden;
+a img {
+  cursor: pointer;
 }
 
-.img-fig {
-  font-size: var(--fs-200);
-  text-align: center;
-}
-
-.img-fig a {
-  text-decoration: none;
-  color: var(--clr-main);
-}
-
-.img {
-  max-width: 100%;
-  height: 60%;
+.open-modal {
+  border: none;
+  padding: 0;
   border-radius: 10px;
-  margin: 1.5em 0;
+  cursor: pointer;
+}
+
+.modal-container {
+  position: absolute;
+  inset: 0;
+  background-color: hsla(0, 0%, 0%, 0.4);
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms ease-in-out;
+}
+
+.modal-container .active {
+  opacity: 1;
+  pointer-events: all;
+  background-color: hsla(0, 0%, 100%, 90%);
+  border-radius: 20px;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.modal {
+  position: relative;
+  margin: 2rem;
+  max-width: 900px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  box-shadow: 0px 2px 40px hsla(0, 0%, 0%, 0.4);
+}
+
+.modal__image-container {
+  display: flex;
+  max-height: 100vh;
+}
+
+.modal__image {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+}
+
+.modal__overlay {
+  position: absolute;
+  z-index: 4;
+  bottom: 1rem;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+}
+
+.modal__btn-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.modal__btn {
+  /* display: grid;
+  place-items: center; */
+
+  background-color: hsla(0, 0%, 0%, 30%);
+  transition: background-color 250ms ease-in-out, border 250ms ease-in-out;
+  color: var(--clr-accent);
+  padding: 0.5rem;
+  border: 4px solid transparent;
+  /* transition: border 250ms ease-in-out; */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal__btn:is(:hover, :focus) {
+  background-color: hsla(0, 0%, 0%, 50%);
+  border: 4px solid hsla(43, 100%, 44%, 75%);
+}
+
+.modal__btn svg {
+  pointer-events: none;
+  width: 2rem;
+  height: 2rem;
+  transition: transform 250ms ease-in-out;
+}
+
+.modal__btn:is(:hover, :focus) svg {
+  transform: scale(1.2);
+}
+
+.modal__indicator-container {
+  order: -1;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.modal__indicator {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: hsla(0, 0%, 0%, 30%);
+  border: 1px solid hsla(43, 100%, 44%, 75%);
+  cursor: pointer;
+  position: relative;
+}
+
+.modal__indicator:is(:hover, :focus) {
+  background-color: hsla(0, 0%, 0%, 50%);
+  border: 3px solid hsla(43, 100%, 44%, 75%);
+}
+
+.modal__indicator.active::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 50%;
+  background-color: hsla(0, 0%, 0%, 50%);
+}
+
+.img-container {
+  display: grid;
+  gap: 2rem;
+}
+
+.img-item {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 0;
   object-fit: cover;
   /* add gap in images */
   /* label images underneath the pictures */
   /* try flex shrink 0 to keep images from shrinking when page does */
 }
+
+.img-link {
+}
+/* find out how to fit anchor tag to image size */
 
 .info-background {
   background-color: rgba(0, 0, 0, 70%);
@@ -156,6 +271,10 @@ fix footer to stick to very bottom of page */
   text-align: center;
 }
 
+.btn-container {
+  text-align: center;
+}
+
 .btn {
   font-size: calc(var(--fs-200) + 0.125rem);
   background-color: var(--clr-accent);
@@ -164,6 +283,7 @@ fix footer to stick to very bottom of page */
   border-radius: 5px;
   padding: 0.5em 1.2em;
   margin: 3em 0;
+  text-align: center;
 }
 
 .btn:hover,
@@ -218,3 +338,5 @@ fix footer to stick to very bottom of page */
     display: block;
   }
 }
+
+/* add media query to adjust font sizes based on screen size */
