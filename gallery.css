@@ -245,6 +245,11 @@ a img {
   /* label images underneath the pictures */
   /* try flex shrink 0 to keep images from shrinking when page does */
 }
+
+.vehicle-info {
+  color: white;
+  text-align: center;
+}
 /* find out how to fit anchor tag to image size */
 
 .info-background {
@@ -292,7 +297,7 @@ a img {
 .footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0%), black);
   color: var(--clr-main);
-  margin-top: 4.6em;
+  margin-top: 2.5em;
   padding-bottom: 2em;
 
   display: flex;
@@ -300,7 +305,7 @@ a img {
   align-items: center;
 }
 
-/* Mobile Hamburger Toggle Below */
+/* Mobile Hamburger Toggle */
 
 .hamburger {
   margin: 0 0 0 40px;
@@ -334,6 +339,10 @@ a img {
   #toggle:checked + .nav-items {
     display: block;
   }
+
+  .main-header {
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 950px) {
@@ -342,4 +351,17 @@ a img {
   }
 }
 
-/* add media query to adjust font sizes based on screen size */
+/* Mobile Hamburger Toggle End */
+
+/* Font Size Media Query's */
+
+@media (min-width: 1600px) {
+  :root {
+    --fs-xl: 4.5rem;
+    --fs-600: 3.5rem;
+    --fs-400: 2.75rem;
+    --fs-200: 1.5rem;
+  }
+}
+
+/* Font Size Media Query's End */

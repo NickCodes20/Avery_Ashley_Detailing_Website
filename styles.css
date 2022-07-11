@@ -172,10 +172,12 @@ fix footer to stick to very bottom of page */
   cursor: pointer;
 }
 
+/* Look up how to use calc with hsl custom properties */
+
 .footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0%), black);
   color: var(--clr-main);
-  margin-top: 4.6em;
+  margin-top: 2.5em;
   padding-bottom: 2em;
 
   display: flex;
@@ -183,7 +185,7 @@ fix footer to stick to very bottom of page */
   align-items: center;
 }
 
-/* Mobile Hamburger Toggle Below */
+/* Mobile Hamburger Toggle */
 
 .hamburger {
   margin: 0 0 0 40px;
@@ -217,4 +219,23 @@ fix footer to stick to very bottom of page */
   #toggle:checked + .nav-items {
     display: block;
   }
+
+  .main-header {
+    padding: 1rem;
+  }
 }
+
+/* Mobile Hamburger Toggle End */
+
+/* Font Size Media Query's */
+
+@media (min-width: 1600px) {
+  :root {
+    --fs-xl: 4.5rem;
+    --fs-600: 3.5rem;
+    --fs-400: 2.75rem;
+    --fs-200: 1.5rem;
+  }
+}
+
+/* Font Size Media Query's End */

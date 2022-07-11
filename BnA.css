@@ -118,7 +118,7 @@ a img {
 }
 
 .BnA-img {
-  max-width: 100%;
+  max-width: 70%;
   border-radius: 10px;
   margin: 0;
   /* add gap in images */
@@ -171,7 +171,7 @@ a img {
 .footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0%), black);
   color: white;
-  margin-top: 4.6em;
+  margin-top: 2.5em;
   padding-bottom: 2em;
 
   display: flex;
@@ -213,4 +213,23 @@ a img {
   #toggle:checked + .nav-items {
     display: block;
   }
+
+  .main-header {
+    padding: 1rem;
+  }
 }
+
+/* Mobile Hamburger Toggle End */
+
+/* Font Size Media Query's */
+
+@media (min-width: 1600px) {
+  :root {
+    --fs-xl: 4.5rem;
+    --fs-600: 3.5rem;
+    --fs-400: 2.75rem;
+    --fs-200: 1.5rem;
+  }
+}
+
+/* Font Size Media Query's End */
